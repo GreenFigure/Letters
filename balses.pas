@@ -38,7 +38,7 @@ begin
                     {$i-}
                     Reset(input);
                     {$i+}
-                    if IOresult<>0
+                    if IOresult <> 0
                        then
                            begin
 
@@ -104,9 +104,8 @@ begin
  while not eof(input) do
  {Checking part}
       begin
-        //Word:=' ';
         Delete(word,1,length(word));
-         chr := 'a';
+        chr := 'a';
         while (chr <> ' ') do
              begin
                   read(input, chr);
